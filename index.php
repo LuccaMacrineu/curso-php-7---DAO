@@ -24,8 +24,15 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+// ALTERA UM USUÁRIO EXISTENTE NA BASE DE DADOS
+//$usuario = new Usuario();
+//$usuario->loadById(14);
+//$usuario->update("professor", "123456");
+//echo $usuario; 
+
+// DELETA UM USUÁRIO EXISTENTE NA BASE DE DADOS
 $usuario = new Usuario();
-$usuario->loadById(14);
-$usuario->update("professor", "123456");
-echo $usuario; 
+$usuario->loadById(13);
+$usuario->delete();
+echo $usuario;
 ?>
