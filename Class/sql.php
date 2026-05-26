@@ -13,7 +13,7 @@
 
                 foreach ($parameters as $key => $value) {
             
-                $this->bindParam($key, $value);        
+                $this->setParam($statement, $key, $value);        
             }
 
         }
