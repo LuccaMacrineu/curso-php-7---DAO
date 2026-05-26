@@ -1,6 +1,6 @@
 <?php
 
-    class Sql {
+    class Sql{
 
         private $conn;
 

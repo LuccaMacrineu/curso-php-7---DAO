@@ -1,11 +1,22 @@
 <?php
 
 require_once("config.php");
+// CARREGA UM USUARIO
+//$mike = new Usuario();
+//$mike->loadById(1);
+//echo $mike;
 
-$mike = new Usuario();
+// CARREGA UMA LISTA DE USUARIOS
+//$lista = Usuario::getList();
+//echo json_encode($lista);
 
-$mike->loadById(1);
+// PESQUISA USUARIOS
+//$pesquisa = Usuario::search("LU");
+//echo json_encode($pesquisa);
 
-echo $mike;
+// CARREGA UM USUARIO USANDO LOGIN E SENHA
+$usuario = new Usuario();
+$usuario ->login("MIKE", "auau");
+echo $usuario;
 
 ?>
